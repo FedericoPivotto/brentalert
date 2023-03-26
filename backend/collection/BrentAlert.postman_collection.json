@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "d43b856a-8f22-460c-ab3b-9b9f749acbba",
+		"name": "BrentAlert",
+		"description": "BrentAlert v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "sindaco",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "sindaco",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/password/2",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"password",
+						"2"
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/password/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/login",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"login"
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "function",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/register",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Bot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer <TOKEN>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ElPivoz",
+							"type": "text"
+						},
+						{
+							"key": "chatID",
+							"value": "34330006",
+							"type": "text"
+						},
+						{
+							"key": "idroLevel",
+							"value": "1.20",
+							"type": "text"
+						},
+						{
+							"key": "idroMaxLevel",
+							"value": "1.00",
+							"type": "text"
+						},
+						{
+							"key": "idroDate",
+							"value": "13/04/2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/bot",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"bot"
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/bot"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer <TOKEN>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/logout",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"logout"
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "BrentaLevel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/brentalevel",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"brentalevel"
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/brentalevel"
+			},
+			"response": []
+		},
+		{
+			"name": "Contatti",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer <TOKEN>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/contatti",
+					"protocol": "http",
+					"host": [
+						"brentalert2020",
+						"altervista",
+						"org"
+					],
+					"path": [
+						"api",
+						"brentalert_v2",
+						"backend",
+						"brentapi",
+						"public",
+						"index.php",
+						"api",
+						"contatti"
+					]
+				},
+				"description": "http://brentalert2020.altervista.org/api/brentalert_v2/backend/brentapi/public/index.php/api/contatti"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

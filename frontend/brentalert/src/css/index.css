@@ -1,0 +1,348 @@
+/*
+ * Copyright (C) 2021 ITIS "E. Fermi", Bassano del Grappa (VI) Italy
+ * Please refer to the AUTHORS file for more information.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+@font-face
+{
+    font-family: bodyFontBlack;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face
+{
+    font-family: bodyFontRegular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+.mediaViewInfo {
+	--web-view-name: Android Mobile – 1;
+	--web-view-id: Android_Mobile___1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Android_Mobile___1;
+}
+
+body {
+	background-color: #fff;
+	font-family: bodyFontRegular;
+}
+
+.navbar {
+	font-size: 7vw;
+}
+
+.nav-link {
+	font-size: 7vw;
+}
+
+.login {
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+	background-color: #3d52d5;
+	color:#fff;
+	margin-bottom: 20%;
+	border-radius:3.5px;
+	border-color:#3d52d5;
+}
+
+.login:hover {
+	color:#fff;
+	background-color: #3d52d5;
+}
+
+.btnAlert {
+	background-color: #ff3333;
+	margin-top: 1rem;
+	width: 55%;
+	border-radius:3.5px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+	color:#fff;
+	font-size: 7.5vw;
+}
+
+.m-5m-top {
+	margin-top:-5%;
+}
+
+.logo-text {
+	text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
+	font-family: bodyFontBlack;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10vw;
+	color: #3d52d5;
+	/* margin-left:5%; */
+	margin-top: 2.5%;
+}
+.logo-text-small {
+	font-family: bodyFontBlack;
+	font-style: small;
+	font-weight: bold;
+	font-size: 4vw;
+	color: #3d52d5;
+	margin-left:5%;
+	margin-top: 2.5%;
+}
+
+
+.logo-img {
+	width:60%;
+	/* height: 70%; */
+}
+
+.circle {
+	margin-top:25%;
+	position:relative;
+	margin-bottom: 25%;
+	height: 35px;
+	width: 35px;
+	border-radius: 100px;
+}
+
+/* proposta di cambio animazione di allarme, guardare anche animateSemaphore */
+.purple {
+	background-color: purple;
+	opacity: 0.5;
+}
+.p-shine
+{
+	opacity: 1;
+	box-shadow: 0 0 10px 3px #ff9999, 0 0 30px 6px #ff3333, 0 0 50px 9px #4d0000;
+	animation: animateSemaphore 1.5s cubic-bezier(.46,.03,.52,.96) infinite;
+}
+.red {
+	background-color: #ff3333;
+	opacity: 0.5;
+}
+
+.r-shine
+{
+	opacity: 1;
+	box-shadow: 0 0 10px 3px #ff9999, 0 0 30px 6px #ff3333, 0 0 50px 9px #4d0000;
+	animation: animateSemaphore 1.5s cubic-bezier(.46,.03,.52,.96) infinite;
+}
+.orange {
+	background-color: #ff9900;
+	opacity: 0.5;
+}
+
+.o-shine
+{
+	opacity: 1;
+	box-shadow: 0 0 10px 3px #ff9900, 0 0 30px 6px #ff3333, 0 0 50px 9px #4d0000;
+	animation: animateSemaphore 1.5s cubic-bezier(.46,.03,.52,.96) infinite;
+}
+/* .red {
+	background-color:#ff3333;
+	opacity: 1;
+	box-shadow:0 0 10px 3px #ff9999,
+	0 0 30px 6px #ff3333,
+	0 0 50px 9px #4d0000;
+	animation: animateSemaphore 1.5s linear infinite;
+} */
+
+.yellow
+{
+	background-color: #ffff00;
+	opacity: 0.5;
+}
+
+.y-shine
+{
+	opacity: 0.5;
+	box-shadow: 0 0 10px 3px #ffff00, 0 0 20px 6px #ff3333, 0 0 30px 9px #cc9900;
+}
+
+.green
+{
+	background-color:#468929;
+	opacity: 0.5;
+}
+
+.g-shine
+{
+	opacity: 1;
+	box-shadow: 0 0 10px 3px #eff9eb, 0 0 30px 6px #468929, 0 0 50px 9px #284f17;
+}
+
+
+.brenta {
+	margin-right:7.5%;
+	width:50%;
+	height:210px;
+	background-image:url(../assets/brenta.png);
+	background-repeat: repeat-x;
+	animation: animateRiver 6s linear infinite;
+	border-radius: 3.5px;
+}
+
+.row-name {
+	font-family: bodyFontBlack;
+	font-size: 5vw;
+	text-align: center;
+	color: #fff;
+	padding:.5rem 1rem .5rem 1rem;
+	width: 25%;
+	height:100%;
+	background-color: #3d52d5;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.element-name {
+	font-family: bodyFontBlack;
+	font-weight: bold;
+	font-size: 5vw;
+	color:#3d52d5;
+	padding:.5rem 1rem .5rem 1rem;
+	width: 40%;
+	height:100%;
+	background-color: #fff;
+	box-shadow: inset 2px 0px 10px 1px #698bc9;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.high
+{
+	animation: animateRiverRed 6s linear infinite;
+}
+
+.medium
+{
+	animation: animateRiverOrange 6s linear infinite;
+}
+
+.low
+{
+	animation: animateRiverYellow 6s linear infinite;
+}
+.very_low
+{
+	animation: animateRiverGreen 15s linear infinite;
+}
+
+@keyframes animateRiver {
+	0% {
+		background-position: 0 25px;
+	}
+
+	100% {
+		background-position: 2000px 25px;
+	}
+}
+
+@keyframes animateRiverRed
+{
+	0%
+	{
+		background-position: 0 25px;
+	}
+
+	100%
+	{
+		background-position: 2000px 25px;
+	}
+}
+
+@keyframes animateRiverOrange
+{
+	0%
+	{
+		background-position: 0 70px;
+	}
+
+	100%
+	{
+		background-position: 2000px 70px;
+	}
+}
+
+@keyframes animateRiverYellow
+{
+	0%
+	{
+		background-position: 0 120px;
+	}
+
+	100%
+	{
+		background-position: 2000px 120px;
+	}
+}
+
+@keyframes animateRiverGreen
+{
+	0%
+	{
+		background-position: 0 170px;
+	}
+
+	100%
+	{
+		background-position: 2000px 170px;
+	}
+}
+
+@keyframes animateSemaphore {
+	0% {
+		box-shadow: 0 0 10px 3px #ff9999, 0 0 30px 6px #ff3333, 0 0 50px 9px #4d0000;
+		/* opacity: 0.5; */
+	}
+
+	50% {
+		box-shadow: 0 0 10px 3px #ff9999, 0 0 30px 6px #ff9999, 0 0 50px 9px #ff9999;
+		/* opacity: 1; */
+	}
+
+	100% {
+		box-shadow: 0 0 10px 3px #ff9999, 0 0 30px 6px #ff3333, 0 0 50px 9px #4d0000;
+		/* opacity: 0.5; */
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+  body{
+    width: 900px;
+    margin: auto;
+  }
+  .element-name, .row-name, .nav-link{
+    font-size: 1vw;
+  }
+  .logo-text{
+    font-size: 4vw;
+  }
+  .logo-text-small{
+    font-size: 1vw;
+  }
+}
