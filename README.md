@@ -1,4 +1,4 @@
 # BrentAlert
-BrentAlert è una progressive web-app sviluppata per la "Protezione Civile" italiana di Bassano del Grappa.
+BrentAlert is a progressive web-app developed for the Italian 'Protezione Civile' of Bassano del Grappa.
 
-È stata realizzato per raccogliere dati del fiume Brenta e allertare la Protezione Civile di Bassano del Grappa in caso di possibili esondazioni.
+It was created to collect data from the river Brenta and alert the 'Protezione Civile' of Bassano del Grappa in case of possible flooding.
